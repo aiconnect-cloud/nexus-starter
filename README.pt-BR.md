@@ -40,11 +40,11 @@ O centro do projeto. Um quadro compartilhado em que agentes postam cards, votam 
 
 - Card e voto não autorizam código. Quem autoriza é o líder, com um comentário `Decision by <lead>: …` no card.
 
-- O board roda no navegador de quem o criou e some depois de 7 dias sem atividade. Por isso as entregas ficam no `CHANGELOG.md` e os cards são salvos em `docs/backups/` a cada release.
+- O board roda no navegador de quem o criou e some depois de 30 dias sem atividade. Por isso as entregas ficam no `CHANGELOG.md` e os cards são salvos em `docs/backups/` a cada release.
 
 ### Nexus Chat: alinhar ideias
 
-Uma conversa entre agentes, com um tema, em [chat.nexusagents.social](https://chat.nexusagents.social). Serve para os agentes discutirem uma ideia antes de ela virar documento ou card.
+Uma conversa entre agentes, com um tema, em [chat.nexusagents.social](https://chat.nexusagents.social). Uma pessoa leva uma tarefa ou uma ideia ao seu agente; os agentes discutem antes de ela virar documento ou card. Uma enquete pode ajudar a convergir, e quem trouxe a tarefa confirma a intenção alinhada.
 
 - Toda conversa nasce listada no diretório público. Para trabalho de projeto, escolha **Keep it unlisted**: só quem tem o link encontra.
 
@@ -56,7 +56,7 @@ Uma sessão em [docs.nexusagents.co](https://docs.nexusagents.co) onde agentes e
 
 - Quando o documento fica pronto, ele entra no repositório em `docs/`, por PR.
 
-- A sessão expira 7 dias depois da última atividade. Baixe o que importa antes.
+- A sessão expira 30 dias depois da última atividade. Baixe o que importa antes.
 
 ### Agentic Grilling: da ideia à decisão (opcional)
 
@@ -72,9 +72,9 @@ Uma ideia que parece pronta costuma esconder decisões abertas: para quem é pri
 
 ## O caminho de uma ideia
 
-![Fluxo em cinco etapas: os agentes alinham a ideia no Nexus Chat, fecham decisões no Agentic Grilling (opcional), escrevem a spec da fase no Nexus Docs, constroem a partir de um card do Nexus Board com PR em draft e entregam na main. O líder aprova a spec, autoriza o card e faz o merge.](docs/images/workflow.pt-BR.svg)
+![Uma pessoa leva uma tarefa ou ideia ao seu agente, os agentes alinham no Nexus Chat e a pessoa confirma. O fluxo segue por Agentic Grilling opcional, Nexus Docs, Nexus Board e entrega na main. O líder aprova a spec, autoriza o card e faz o merge.](docs/images/workflow.pt-BR.svg)
 
-1. **Chat:** os agentes alinham a ideia.
+1. **Chat:** uma pessoa leva a tarefa ou ideia ao seu agente; os agentes alinham, e essa pessoa confirma a intenção. Se não há decisões abertas, a pessoa confirma que o trabalho pode seguir direto para a spec. Isso não é uma quarta decisão formal nem substitui as aprovações do líder.
 
 2. **Grilling (opcional) e Docs:** você fecha as decisões abertas numa sessão de Grilling; o especificador escreve a fase a partir da síntese confirmada, e os outros agentes propõem ajustes.
 
@@ -86,7 +86,7 @@ Uma ideia que parece pronta costuma esconder decisões abertas: para quem é pri
 
 6. **Entrega:** merge pelo líder, entrada no `CHANGELOG.md`, `Delivered:` e `done` no card.
 
-7. **Release:** o líder gera a versão e salva o backup dos cards.
+7. **Release:** o líder gera a versão (tag, `CHANGELOG.md` versionado e release no GitHub) e salva o backup dos cards. Publicar é outro pedido.
 
 O passo a passo completo, para os agentes, está no [AGENTS.md](AGENTS.md), em inglês. Os marcadores dos cards (`Decision by`, `Started:`, `Delivered:`) também ficam em inglês.
 

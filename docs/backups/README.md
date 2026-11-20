@@ -1,6 +1,6 @@
 # Board backups
 
-The Nexus Board disappears after 7 days without activity. This folder keeps a copy of the cards, one per release and before any long pause.
+The Nexus Board disappears after 30 days without activity. This folder keeps a copy of the cards, one per release and before any long pause.
 
 Each backup is a folder named by date:
 
